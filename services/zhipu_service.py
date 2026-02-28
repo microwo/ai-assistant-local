@@ -1,7 +1,7 @@
 """
 智谱AI服务
 """
-from zhipuai import ZhipuAI
+from zai import ZhipuAiClient
 from typing import List, Dict, Optional
 
 
@@ -9,7 +9,7 @@ class ZhipuService:
     """智谱AI服务"""
 
     def __init__(self, api_key: str, model: str = "glm-4"):
-        self.client = ZhipuAI(api_key=api_key)
+        self.client = ZhipuAiClient(api_key=api_key)
         self.model = model
 
     def chat(

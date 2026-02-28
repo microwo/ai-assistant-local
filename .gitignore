@@ -48,3 +48,4 @@ data/
 
 # GitHub配置（敏感信息）
 .github-config.json
+push_to_github.sh
